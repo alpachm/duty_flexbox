@@ -138,6 +138,10 @@ body {
     border-radius: 1rem;
 }
 
+.conteiner>p {
+    margin-top: 1rem;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width:520px) {
