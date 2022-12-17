@@ -1,3 +1,17 @@
+:root {
+    --greenColor: #155b24;
+    --orangeColor: #fca422;
+    --brownColor: #7B3E60;
+    --darkRedColor: #B45259;
+    --yellowColor: #ebab6b;
+    --aquaColor: #36a6ff;
+    --blueColor: #3047f8;
+    --purpleColor: #9346da;
+    --darkBrownColor: #483653;
+    --blackColor: #12242e;
+    --bgColor: #1a242b;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -10,7 +24,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: rgb(26, 25, 25);
+    background: var(--bgColor);
     color: white;
     font-size: 12px;
     padding: 1rem;
@@ -31,7 +45,7 @@ body {
 .header .right,
 .section .main .box,
 .section .aside {
-    background: green;
+    background: var(--greenColor);
     height: 140px;
     border-radius: 1rem;
     padding: 1rem;
@@ -41,7 +55,7 @@ body {
 }
 
 .header .right {
-    background: orange;
+    background: var(--orangeColor);
 
 }
 
@@ -67,34 +81,34 @@ body {
 }
 
 .section .main .box:nth-child(1) {
-    background: darkred;
+    background: var(--brownColor);
 }
 
 .section .main .box:nth-child(2) {
-    background-color: crimson;
+    background-color: var(--darkRedColor);
 }
 
 .section .main .box:nth-child(3) {
-    background: rgb(207, 207, 71);
+    background: var(--yellowColor);
 }
 
 .section .main .box:nth-child(4) {
-    background: aqua;
+    background: var(--aquaColor);
 }
 
 .section .main .box:nth-child(5) {
-    background: blue;
+    background: var(--blueColor);
 }
 
 .section .main .box:nth-child(6) {
-    background: blueviolet;
+    background: var(--purpleColor);
 }
 
 /* ASIDE */
 
 .section .aside,
 .section .aside .text {
-    background: rgb(65, 22, 22);
+    background: var(--darkBrownColor);
     height: auto;
     display: flex;
     flex-flow: column wrap;
@@ -119,7 +133,7 @@ body {
 }
 
 .section .aside .button {
-    background: rgb(26, 25, 25);
+    background: var(--blackColor);
     padding: .5rem 1rem;
     border-radius: 1rem;
 }
